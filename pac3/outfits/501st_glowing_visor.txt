@@ -2,7 +2,7 @@
 	["self"] = {
 		["ClassName"] = "group",
 		["Name"] = "501st glowing visor",
-		["UniqueID"] = "1754a46338ec0a10a0f474adc3f1fe4afd46b315",
+		["UniqueID"] = "cb561dcb2b9c3a29e4efb2d1b42719bdb988f446",
 		["OwnerName"] = "self",
 	},
 	["children"] = {
@@ -10,14 +10,14 @@
 			["self"] = {
 				["ClassName"] = "entity2",
 				["Name"] = "trooper",
-				["UniqueID"] = "b10f1131761db84b74e434a0c76c73e82339b1f7",
+				["UniqueID"] = "cb8cb19648a4dba687e3b616aad9779ad92cfbce",
 			},
 			["children"] = {
 				[1] = {
 					["self"] = {
 						["ClassName"] = "material_3d",
 						["Name"] = "visor glow",
-						["UniqueID"] = "d79bb57e034a6269720154a8ef82e8c6f9a19957",
+						["UniqueID"] = "90d10acb4908e690af01f9a9195edc84c2f0d604",
 						["MaterialOverride"] = "helmet",
 						["basetexture"] = "hazel/501st_materials_v2/enlisted/helmet",
 						["bumpmap"] = "https://raw.githubusercontent.com/yeezybeezydeezy/gmodstuff/main/pac3/501st_helmet_nm_mattevisor.vtf",
@@ -47,12 +47,12 @@
 							["self"] = {
 								["ClassName"] = "proxy",
 								["Name"] = "visor animation",
-								["UniqueID"] = "bd2f46e0b76c24aa55d3fe29bad167c2cbb29bed",
+								["UniqueID"] = "b1d10b4384906e326c0fc8967ee83c83c58bf2c3",
 								["VariableName"] = "detailframe",
 								["Additive"] = true,
-								["Extra1"] = "if_event(\"e5a109553b351aefaa0e2d9c11b2e889e8c53809\", 1, 0) * max(min(1, voice_volume()*3.5), if_event(\"bfe9176908516e6fa4a3cac97613bb2ea3312f8e\", 1, 0) * (0.6 + 0.4*sin(time()*23)*sin(time()*9.1)))",
-								["Extra2"] = "if_event(\"6dfa663c8860445ca212a9e9a462115cd01e797f\", 1, 0)",
-								["Extra3"] = "extra5(\"7887b3186befe4d759397d4ff44c1b8174d4589f\")",
+								["Extra1"] = "if_event(\"dd41db0bf1b962f12e1e3f80d32e7c90a384d070\", 1, 0) * max(min(1, voice_volume()*3.5), if_event(\"57e2955acb4843d369889fcf87b9d324b1f2473a\", 1, 0) * (0.6 + 0.4*sin(time()*23)*sin(time()*9.1)))",
+								["Extra2"] = "if_event(\"f2bd9bc262a5d8899993b0b374e8c79a678b7f48\", 1, 0)",
+								["Extra3"] = "extra5(\"3e30294edc73a72d347482a1d207fe096380a442\")",
 								["Expression"] = "ftime()*20*(1 + 2.5*var1() + 0.8*var2() + 4*var3())",
 							},
 							["children"] = {
@@ -62,12 +62,12 @@
 							["self"] = {
 								["ClassName"] = "proxy",
 								["Name"] = "visor comms glow",
-								["UniqueID"] = "1c5305744207629a81e83117bb7253180d0135ed",
+								["UniqueID"] = "a4a34e50ae07eec71aeca21ad7923a2837936f8d",
 								["VariableName"] = "detailblendfactor",
-								["Extra1"] = "if_event(\"e5a109553b351aefaa0e2d9c11b2e889e8c53809\", 1, 0) * max(min(1, voice_volume()*3.5), if_event(\"bfe9176908516e6fa4a3cac97613bb2ea3312f8e\", 1, 0) * (0.6 + 0.4*sin(time()*23)*sin(time()*9.1)))",
-								["Extra2"] = "if_event(\"6dfa663c8860445ca212a9e9a462115cd01e797f\", 1, 0)",
-								["Extra3"] = "extra2(\"853b576826338b2cbc569e989ab7a5b8fc9671f6\")",
-								["Extra4"] = "extra4(\"7887b3186befe4d759397d4ff44c1b8174d4589f\")",
+								["Extra1"] = "if_event(\"dd41db0bf1b962f12e1e3f80d32e7c90a384d070\", 1, 0) * max(min(1, voice_volume()*3.5), if_event(\"57e2955acb4843d369889fcf87b9d324b1f2473a\", 1, 0) * (0.6 + 0.4*sin(time()*23)*sin(time()*9.1)))",
+								["Extra2"] = "if_event(\"f2bd9bc262a5d8899993b0b374e8c79a678b7f48\", 1, 0)",
+								["Extra3"] = "extra2(\"faf4493d8637a98cd3a114a257ce3a48ecb0623f\")",
+								["Extra4"] = "extra4(\"3e30294edc73a72d347482a1d207fe096380a442\")",
 								["Expression"] = "(0.85 + 0.15*sin(time()*2.4) + 0.6*var1() + 0.2*var2()*sin(time()*9))*var3()*var4()",
 							},
 							["children"] = {
@@ -77,13 +77,13 @@
 							["self"] = {
 								["ClassName"] = "proxy",
 								["Name"] = "visor rim glow",
-								["UniqueID"] = "d61071df09c5d380264d81a2023fe1704f936609",
+								["UniqueID"] = "28d2473177446eceab8d02c40c2bcff36242711a",
 								["VariableName"] = "selfillumtint",
-								["Extra1"] = "if_event(\"e5a109553b351aefaa0e2d9c11b2e889e8c53809\", 1, 0) * max(min(1, voice_volume()*3.5), if_event(\"bfe9176908516e6fa4a3cac97613bb2ea3312f8e\", 1, 0) * (0.6 + 0.4*sin(time()*23)*sin(time()*9.1)))",
-								["Extra2"] = "if_event(\"6dfa663c8860445ca212a9e9a462115cd01e797f\", 1, 0)",
-								["Extra3"] = "extra3(\"853b576826338b2cbc569e989ab7a5b8fc9671f6\")",
+								["Extra1"] = "if_event(\"dd41db0bf1b962f12e1e3f80d32e7c90a384d070\", 1, 0) * max(min(1, voice_volume()*3.5), if_event(\"57e2955acb4843d369889fcf87b9d324b1f2473a\", 1, 0) * (0.6 + 0.4*sin(time()*23)*sin(time()*9.1)))",
+								["Extra2"] = "if_event(\"f2bd9bc262a5d8899993b0b374e8c79a678b7f48\", 1, 0)",
+								["Extra3"] = "extra3(\"faf4493d8637a98cd3a114a257ce3a48ecb0623f\")",
 								["Extra4"] = "(0.9 + 0.1*sin(time()*2.4) + 0.5*var1() + 0.15*var2()*sin(time()*9))*var3()",
-								["Extra5"] = "extra4(\"7887b3186befe4d759397d4ff44c1b8174d4589f\")",
+								["Extra5"] = "extra4(\"3e30294edc73a72d347482a1d207fe096380a442\")",
 								["Expression"] = "0.3365*var4()*var5(), 0.6384*var4()*var5(), 0.9922*var4()*var5()",
 							},
 							["children"] = {
@@ -97,7 +97,7 @@
 			["self"] = {
 				["ClassName"] = "event",
 				["Name"] = "sensor: talking",
-				["UniqueID"] = "e5a109553b351aefaa0e2d9c11b2e889e8c53809",
+				["UniqueID"] = "dd41db0bf1b962f12e1e3f80d32e7c90a384d070",
 				["Event"] = "is_voice_chatting",
 				["Invert"] = false,
 				["AffectChildrenOnly"] = true,
@@ -109,7 +109,7 @@
 			["self"] = {
 				["ClassName"] = "event",
 				["Name"] = "sensor: typing",
-				["UniqueID"] = "6dfa663c8860445ca212a9e9a462115cd01e797f",
+				["UniqueID"] = "f2bd9bc262a5d8899993b0b374e8c79a678b7f48",
 				["Event"] = "is_typing",
 				["Invert"] = false,
 				["AffectChildrenOnly"] = true,
@@ -121,7 +121,7 @@
 			["self"] = {
 				["ClassName"] = "event",
 				["Name"] = "sensor: my own view",
-				["UniqueID"] = "bfe9176908516e6fa4a3cac97613bb2ea3312f8e",
+				["UniqueID"] = "57e2955acb4843d369889fcf87b9d324b1f2473a",
 				["Event"] = "viewed_by_owner",
 				["Invert"] = false,
 				["AffectChildrenOnly"] = true,
@@ -133,7 +133,7 @@
 			["self"] = {
 				["ClassName"] = "sprite",
 				["Name"] = "light probe (invisible)",
-				["UniqueID"] = "c79e85ea6c95d775f2a96e635d30190b99c6320e",
+				["UniqueID"] = "8b6301845712e3f7ed4e47351bf54a44c2bba6fc",
 				["Bone"] = "head",
 				["Position"] = Vector(7.56, -9.15, 0),
 				["Size"] = 0.0,
@@ -144,7 +144,7 @@
 					["self"] = {
 						["ClassName"] = "proxy",
 						["Name"] = "light sensor",
-						["UniqueID"] = "853b576826338b2cbc569e989ab7a5b8fc9671f6",
+						["UniqueID"] = "faf4493d8637a98cd3a114a257ce3a48ecb0623f",
 						["VariableName"] = "SizeY",
 						["Extra1"] = "clamp(light_value()*3, 0, 1)",
 						["Extra2"] = "(var2() or 0.7) + (0.35 + 1.35*var1() - (var2() or 0.7))*min(1, ftime()*2)",
@@ -158,7 +158,7 @@
 					["self"] = {
 						["ClassName"] = "proxy",
 						["Name"] = "power state",
-						["UniqueID"] = "8f8e0cf841f5a8695cb65b41596ec9dd89cf51e9",
+						["UniqueID"] = "cadc7329c0fa43915b490e82bf0937bb9438487c",
 						["VariableName"] = "SizeFadePower",
 						["Extra1"] = "clamp(owner_health(), 0, 1)",
 						["Extra2"] = "((var2() or 0) + ftime())*(1 - clamp(abs(var1() + 1 - (var3() or 0)), 0, 1))",
@@ -173,14 +173,47 @@
 					["self"] = {
 						["ClassName"] = "proxy",
 						["Name"] = "power cycle",
-						["UniqueID"] = "7887b3186befe4d759397d4ff44c1b8174d4589f",
+						["UniqueID"] = "3e30294edc73a72d347482a1d207fe096380a442",
 						["VariableName"] = "SizeX",
-						["Extra1"] = "extra1(\"8f8e0cf841f5a8695cb65b41596ec9dd89cf51e9\")",
-						["Extra2"] = "extra4(\"8f8e0cf841f5a8695cb65b41596ec9dd89cf51e9\")",
-						["Extra3"] = "extra2(\"8f8e0cf841f5a8695cb65b41596ec9dd89cf51e9\")",
+						["Extra1"] = "extra1(\"cadc7329c0fa43915b490e82bf0937bb9438487c\")",
+						["Extra2"] = "extra4(\"cadc7329c0fa43915b490e82bf0937bb9438487c\")",
+						["Extra3"] = "extra2(\"cadc7329c0fa43915b490e82bf0937bb9438487c\")",
 						["Extra4"] = "var1()*((0.6*(clamp((var2() - 0.15)*50, 0, 1) - clamp((var2() - 0.25)*50, 0, 1)) + 0.85*(clamp((var2() - 0.35)*50, 0, 1) - clamp((var2() - 0.42)*50, 0, 1)) + 0.1*(clamp((var2() - 0.42)*50, 0, 1) - clamp((var2() - 0.6)*50, 0, 1)))*(1 - clamp((var2() - 0.6)*50, 0, 1)) + clamp((var2() - 0.6)*50, 0, 1)*(1.15*clamp((var2() - 0.6)/0.6, 0, 1) - 0.15*clamp((var2() - 1.2)/0.8, 0, 1))) + (1 - var1())*((1 - clamp(var3()/1.2, 0, 1))*(0.65 + 0.35*sin(var3()*40)))",
 						["Extra5"] = "var1()*(clamp((var2() - 0.6)*50, 0, 1) - clamp((var2() - 1.2)*50, 0, 1))",
 						["Expression"] = "var4()",
+					},
+					["children"] = {
+					},
+				},
+			},
+		},
+		[6] = {
+			["self"] = {
+				["ClassName"] = "weapon",
+				["Name"] = "republic blast shield",
+				["UniqueID"] = "8566c927307bf3c8531fb76f318957e29b1a820d",
+				["Class"] = "republic_blast_shield",
+			},
+			["children"] = {
+				[1] = {
+					["self"] = {
+						["ClassName"] = "material_3d",
+						["Name"] = "shield paint",
+						["UniqueID"] = "8b3e1f4d9d06ce4e0d2f83a20d47c54ec336e9e5",
+						["MaterialOverride"] = "m3_bulwark_blast_shield",
+						["basetexture"] = "https://raw.githubusercontent.com/yeezybeezydeezy/gmodstuff/main/pac3/republic_blast_shield_501st.vtf",
+						["bumpmap"] = "hazel/wg_stuff_materials/m3_bulwark_blast_shield/m3_bulwark_blast_shield_n",
+						["halflambert"] = true,
+						["model"] = true,
+						["phong"] = true,
+						["phongboost"] = 2.5,
+						["phongexponent"] = 5.0,
+						["phongfresnelranges"] = Vector(0.3, 0.7, 1),
+						["phongexponenttexture"] = "wgcwrp/shared/plain_exp",
+						["phongalbedotint"] = true,
+						["rimlight"] = true,
+						["rimlightboost"] = 2.0,
+						["rimlightexponent"] = 0.2,
 					},
 					["children"] = {
 					},
