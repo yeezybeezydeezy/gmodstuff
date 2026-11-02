@@ -2,7 +2,7 @@
 	["self"] = {
 		["ClassName"] = "group",
 		["Name"] = "501st glowing visor",
-		["UniqueID"] = "e4bfc9645fddadad6ddf23461459cbbf8c473148",
+		["UniqueID"] = "6358a4658a76834f1f0cfc4a0953d52863107dec",
 		["OwnerName"] = "self",
 	},
 	["children"] = {
@@ -10,14 +10,14 @@
 			["self"] = {
 				["ClassName"] = "entity2",
 				["Name"] = "trooper",
-				["UniqueID"] = "0339779bffcf92d2a7b3058fdf144605a11838e4",
+				["UniqueID"] = "febe0612673450aa9e9441588f8f55d6992ecf9d",
 			},
 			["children"] = {
 				[1] = {
 					["self"] = {
 						["ClassName"] = "material_3d",
 						["Name"] = "visor glow",
-						["UniqueID"] = "cd9de550e6282f792c1ad42b2290bffd48936541",
+						["UniqueID"] = "b5f9e6a46cae3348464711fd83ca89a45bf038b3",
 						["MaterialOverride"] = "helmet",
 						["basetexture"] = "hazel/501st_materials_v2/enlisted/helmet",
 						["bumpmap"] = "wgcwrp/shared/helmet_nm",
@@ -31,24 +31,27 @@
 						["phongexponenttexture"] = "wgcwrp/shared/plain_exp",
 						["phongfresnelranges"] = Vector(0.5, 0.5, 0),
 						["phongalbedotint"] = true,
-						["detail"] = "https://raw.githubusercontent.com/yeezybeezydeezy/gmodstuff/main/pac3/501st_visor_anim_v2.vtf",
+						["detail"] = "https://raw.githubusercontent.com/yeezybeezydeezy/gmodstuff/main/pac3/501st_visor_anim_v3.vtf",
 						["detailblendmode"] = 5,
 						["detailblendfactor"] = 1.0,
 						["detailscale"] = 1.0,
 						["detailframe"] = 0,
 						["detailtexturetransformScale"] = Vector(3.30033, 9.00901, 1),
 						["detailtexturetransformPosition"] = Vector(-1.12211, -7.6036, 0),
+						["selfillum"] = true,
+						["selfillummask"] = "https://raw.githubusercontent.com/yeezybeezydeezy/gmodstuff/main/pac3/501st_visor_rimglow.vtf",
+						["selfillumtint"] = Vector(0.4588, 0.8706, 1.3529),
 					},
 					["children"] = {
 						[1] = {
 							["self"] = {
 								["ClassName"] = "proxy",
 								["Name"] = "visor animation",
-								["UniqueID"] = "bfc3a2b7f90d49245eebab0d8e1f099ac86fe65a",
+								["UniqueID"] = "a18b4732e241bee44dd281a085265f5969b8c77b",
 								["VariableName"] = "detailframe",
 								["Additive"] = true,
-								["Extra1"] = "if_event(\"900d49bb1e25f9cf91a8dc50d7418f2bc03a7cff\", 1, 0) * max(min(1, voice_volume()*3.5), if_event(\"e52b2016b65267d6eb397ba921d8cdb0823bc531\", 1, 0) * (0.6 + 0.4*sin(time()*23)*sin(time()*9.1)))",
-								["Extra2"] = "if_event(\"0f48504ec2b047a6a8701aac46ffb84c107393a2\", 1, 0)",
+								["Extra1"] = "if_event(\"c5921152e9062620829835c5f9bd7fb1419e7063\", 1, 0) * max(min(1, voice_volume()*3.5), if_event(\"27f340141d2c4badfb9b5253e052e6d33084802c\", 1, 0) * (0.6 + 0.4*sin(time()*23)*sin(time()*9.1)))",
+								["Extra2"] = "if_event(\"40e175d5278d0774e0811c7935d6cde99172c33f\", 1, 0)",
 								["Expression"] = "ftime()*20*(1 + 2.5*var1() + 0.8*var2())",
 							},
 							["children"] = {
@@ -58,11 +61,25 @@
 							["self"] = {
 								["ClassName"] = "proxy",
 								["Name"] = "visor comms glow",
-								["UniqueID"] = "ebeb95b80e8312a88fbcdfc1d5d3d4e12ee86adb",
+								["UniqueID"] = "a7c104571498fe969f8f6827dee9f9f69a0c3fb8",
 								["VariableName"] = "detailblendfactor",
-								["Extra1"] = "if_event(\"900d49bb1e25f9cf91a8dc50d7418f2bc03a7cff\", 1, 0) * max(min(1, voice_volume()*3.5), if_event(\"e52b2016b65267d6eb397ba921d8cdb0823bc531\", 1, 0) * (0.6 + 0.4*sin(time()*23)*sin(time()*9.1)))",
-								["Extra2"] = "if_event(\"0f48504ec2b047a6a8701aac46ffb84c107393a2\", 1, 0)",
-								["Expression"] = "0.85 + 0.15*sin(time()*2.4) + 1.1*var1() + 0.35*var2()*sin(time()*9)",
+								["Extra1"] = "if_event(\"c5921152e9062620829835c5f9bd7fb1419e7063\", 1, 0) * max(min(1, voice_volume()*3.5), if_event(\"27f340141d2c4badfb9b5253e052e6d33084802c\", 1, 0) * (0.6 + 0.4*sin(time()*23)*sin(time()*9.1)))",
+								["Extra2"] = "if_event(\"40e175d5278d0774e0811c7935d6cde99172c33f\", 1, 0)",
+								["Expression"] = "0.85 + 0.15*sin(time()*2.4) + 0.6*var1() + 0.2*var2()*sin(time()*9)",
+							},
+							["children"] = {
+							},
+						},
+						[3] = {
+							["self"] = {
+								["ClassName"] = "proxy",
+								["Name"] = "visor rim glow",
+								["UniqueID"] = "df81828e7803e2dd3b9e8a23584b339ea7a72ba5",
+								["VariableName"] = "selfillumtint",
+								["Extra1"] = "if_event(\"c5921152e9062620829835c5f9bd7fb1419e7063\", 1, 0) * max(min(1, voice_volume()*3.5), if_event(\"27f340141d2c4badfb9b5253e052e6d33084802c\", 1, 0) * (0.6 + 0.4*sin(time()*23)*sin(time()*9.1)))",
+								["Extra2"] = "if_event(\"40e175d5278d0774e0811c7935d6cde99172c33f\", 1, 0)",
+								["Extra3"] = "0.9 + 0.1*sin(time()*2.4) + 0.5*var1() + 0.15*var2()*sin(time()*9)",
+								["Expression"] = "0.4588*var3(), 0.8706*var3(), 1.3529*var3()",
 							},
 							["children"] = {
 							},
@@ -75,7 +92,7 @@
 			["self"] = {
 				["ClassName"] = "event",
 				["Name"] = "sensor: talking",
-				["UniqueID"] = "900d49bb1e25f9cf91a8dc50d7418f2bc03a7cff",
+				["UniqueID"] = "c5921152e9062620829835c5f9bd7fb1419e7063",
 				["Event"] = "is_voice_chatting",
 				["Invert"] = false,
 				["AffectChildrenOnly"] = true,
@@ -87,7 +104,7 @@
 			["self"] = {
 				["ClassName"] = "event",
 				["Name"] = "sensor: typing",
-				["UniqueID"] = "0f48504ec2b047a6a8701aac46ffb84c107393a2",
+				["UniqueID"] = "40e175d5278d0774e0811c7935d6cde99172c33f",
 				["Event"] = "is_typing",
 				["Invert"] = false,
 				["AffectChildrenOnly"] = true,
@@ -99,7 +116,7 @@
 			["self"] = {
 				["ClassName"] = "event",
 				["Name"] = "sensor: my own view",
-				["UniqueID"] = "e52b2016b65267d6eb397ba921d8cdb0823bc531",
+				["UniqueID"] = "27f340141d2c4badfb9b5253e052e6d33084802c",
 				["Event"] = "viewed_by_owner",
 				["Invert"] = false,
 				["AffectChildrenOnly"] = true,
