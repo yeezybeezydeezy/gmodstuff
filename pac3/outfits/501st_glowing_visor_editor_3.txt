@@ -1,0 +1,191 @@
+[1] = {
+	["self"] = {
+		["ClassName"] = "group",
+		["Name"] = "501st glowing visor",
+		["UniqueID"] = "64a9970b33ff39f76baba3588cc74ddadc3f5bcc",
+		["OwnerName"] = "self",
+	},
+	["children"] = {
+		[1] = {
+			["self"] = {
+				["ClassName"] = "entity2",
+				["Name"] = "trooper",
+				["UniqueID"] = "5f35deee8e6db2d325333b4b84679fa84b90b10d",
+			},
+			["children"] = {
+				[1] = {
+					["self"] = {
+						["ClassName"] = "material_3d",
+						["Name"] = "visor glow",
+						["UniqueID"] = "140c0784ccff8f99bd9a7fe68e6b94e1165218e0",
+						["MaterialOverride"] = "helmet",
+						["basetexture"] = "hazel/501st_materials_v2/enlisted/helmet",
+						["bumpmap"] = "https://raw.githubusercontent.com/yeezybeezydeezy/gmodstuff/main/pac3/501st_helmet_nm_mattevisor.vtf",
+						["color2"] = Vector(0.9, 0.9, 0.9),
+						["halflambert"] = true,
+						["model"] = true,
+						["nocull"] = true,
+						["phong"] = true,
+						["phongboost"] = 1.7,
+						["phongexponent"] = 15.0,
+						["phongexponenttexture"] = "wgcwrp/shared/plain_exp",
+						["phongfresnelranges"] = Vector(0.5, 0.5, 0.0),
+						["phongalbedotint"] = true,
+						["detail"] = "https://raw.githubusercontent.com/yeezybeezydeezy/gmodstuff/main/pac3/501st_visor_anim_v3.vtf",
+						["detailblendmode"] = 5,
+						["detailblendfactor"] = 1.0,
+						["detailscale"] = 1.0,
+						["detailframe"] = 0,
+						["detailtexturetransformScale"] = Vector(3.30033, 9.00901, 1.0),
+						["detailtexturetransformPosition"] = Vector(-1.12211, -7.6036, 0.0),
+						["selfillum"] = true,
+						["selfillummask"] = "https://raw.githubusercontent.com/yeezybeezydeezy/gmodstuff/main/pac3/501st_visor_rimglow_v3.vtf",
+						["selfillumtint"] = Vector(0.3365, 0.6384, 0.9922),
+					},
+					["children"] = {
+						[1] = {
+							["self"] = {
+								["ClassName"] = "proxy",
+								["Name"] = "visor animation",
+								["UniqueID"] = "94a5e6050500397410d29924f6f3d463f92294d7",
+								["VariableName"] = "detailframe",
+								["Additive"] = true,
+								["Extra1"] = "if_event(\"e993c2018b4fc622e9d8ae298b94754a5fbbab67\", 1, 0) * max(min(1, voice_volume()*3.5), if_event(\"74ec8e677af35c1f52511ff8d057573680b705ee\", 1, 0) * (0.6 + 0.4*sin(time()*23)*sin(time()*9.1)))",
+								["Extra2"] = "if_event(\"44b310c18f3afdfe997992ee6c1e6edaef8a5a8d\", 1, 0)",
+								["Extra3"] = "extra5(\"e55528b1c124837a722a95c12d6251edbb2c9561\")",
+								["Expression"] = "ftime()*40.0*(1 + 2.5*var1() + 0.8*var2() + 4.0*var3())",
+							},
+							["children"] = {
+							},
+						},
+						[2] = {
+							["self"] = {
+								["ClassName"] = "proxy",
+								["Name"] = "visor comms glow",
+								["UniqueID"] = "535e20876f882dc2f4a8fb1173f8f874f4cbb09b",
+								["VariableName"] = "detailblendfactor",
+								["Extra1"] = "if_event(\"e993c2018b4fc622e9d8ae298b94754a5fbbab67\", 1, 0) * max(min(1, voice_volume()*3.5), if_event(\"74ec8e677af35c1f52511ff8d057573680b705ee\", 1, 0) * (0.6 + 0.4*sin(time()*23)*sin(time()*9.1)))",
+								["Extra2"] = "if_event(\"44b310c18f3afdfe997992ee6c1e6edaef8a5a8d\", 1, 0)",
+								["Extra3"] = "extra2(\"b4b9c87d0b404eb7921696de7cc4171224ae7e59\")",
+								["Extra4"] = "extra4(\"e55528b1c124837a722a95c12d6251edbb2c9561\")",
+								["Expression"] = "(0.85 + 0.15*sin(time()*2.4) + 0.6*var1() + 0.2*var2()*sin(time()*9.0))*var3()*var4()",
+							},
+							["children"] = {
+							},
+						},
+						[3] = {
+							["self"] = {
+								["ClassName"] = "proxy",
+								["Name"] = "visor rim glow",
+								["UniqueID"] = "e9363979afa5f1cdfcb766452c8eeab61030c066",
+								["VariableName"] = "selfillumtint",
+								["Extra1"] = "if_event(\"e993c2018b4fc622e9d8ae298b94754a5fbbab67\", 1, 0) * max(min(1, voice_volume()*3.5), if_event(\"74ec8e677af35c1f52511ff8d057573680b705ee\", 1, 0) * (0.6 + 0.4*sin(time()*23)*sin(time()*9.1)))",
+								["Extra2"] = "if_event(\"44b310c18f3afdfe997992ee6c1e6edaef8a5a8d\", 1, 0)",
+								["Extra3"] = "extra3(\"b4b9c87d0b404eb7921696de7cc4171224ae7e59\")",
+								["Extra4"] = "(0.9 + 0.1*sin(time()*2.4) + 0.5*var1() + 0.15*var2()*sin(time()*9.0))*var3()",
+								["Extra5"] = "extra4(\"e55528b1c124837a722a95c12d6251edbb2c9561\")",
+								["Expression"] = "0.3365*var4()*var5(), 0.6384*var4()*var5(), 0.9922*var4()*var5()",
+							},
+							["children"] = {
+							},
+						},
+					},
+				},
+			},
+		},
+		[2] = {
+			["self"] = {
+				["ClassName"] = "event",
+				["Name"] = "sensor: talking",
+				["UniqueID"] = "e993c2018b4fc622e9d8ae298b94754a5fbbab67",
+				["Event"] = "is_voice_chatting",
+				["Invert"] = false,
+				["AffectChildrenOnly"] = true,
+			},
+			["children"] = {
+			},
+		},
+		[3] = {
+			["self"] = {
+				["ClassName"] = "event",
+				["Name"] = "sensor: typing",
+				["UniqueID"] = "44b310c18f3afdfe997992ee6c1e6edaef8a5a8d",
+				["Event"] = "is_typing",
+				["Invert"] = false,
+				["AffectChildrenOnly"] = true,
+			},
+			["children"] = {
+			},
+		},
+		[4] = {
+			["self"] = {
+				["ClassName"] = "event",
+				["Name"] = "sensor: my own view",
+				["UniqueID"] = "74ec8e677af35c1f52511ff8d057573680b705ee",
+				["Event"] = "viewed_by_owner",
+				["Invert"] = false,
+				["AffectChildrenOnly"] = true,
+			},
+			["children"] = {
+			},
+		},
+		[5] = {
+			["self"] = {
+				["ClassName"] = "sprite",
+				["Name"] = "light probe (invisible)",
+				["UniqueID"] = "c618dc0108779f31f30d022184c4e91078cee999",
+				["Bone"] = "head",
+				["Position"] = Vector(7.56, -9.15, 0.0),
+				["Size"] = 0.0,
+				["Alpha"] = 0.0,
+			},
+			["children"] = {
+				[1] = {
+					["self"] = {
+						["ClassName"] = "proxy",
+						["Name"] = "light sensor",
+						["UniqueID"] = "b4b9c87d0b404eb7921696de7cc4171224ae7e59",
+						["VariableName"] = "SizeY",
+						["Extra1"] = "clamp(light_value()*3.0, 0, 1)",
+						["Extra2"] = "(var2() or 0.7) + (0.35 + 1.35*var1() - (var2() or 0.7))*min(1, ftime()*2)",
+						["Extra3"] = "(var3() or 0.7) + (0.08 + 1.52*var1() - (var3() or 0.7))*min(1, ftime()*2)",
+						["Expression"] = "var2()",
+					},
+					["children"] = {
+					},
+				},
+				[2] = {
+					["self"] = {
+						["ClassName"] = "proxy",
+						["Name"] = "power state",
+						["UniqueID"] = "ddc87c846c85188d186bd965c49bcca4132961d2",
+						["VariableName"] = "SizeFadePower",
+						["Extra1"] = "clamp(owner_health(), 0, 1)",
+						["Extra2"] = "((var2() or 0) + ftime())*(1 - clamp(abs(var1() + 1 - (var3() or 0)), 0, 1))",
+						["Extra3"] = "var1() + 1",
+						["Extra4"] = "min(var2(), timeex())",
+						["Expression"] = "var4()",
+					},
+					["children"] = {
+					},
+				},
+				[3] = {
+					["self"] = {
+						["ClassName"] = "proxy",
+						["Name"] = "power cycle",
+						["UniqueID"] = "e55528b1c124837a722a95c12d6251edbb2c9561",
+						["VariableName"] = "SizeX",
+						["Extra1"] = "extra1(\"ddc87c846c85188d186bd965c49bcca4132961d2\")",
+						["Extra2"] = "extra4(\"ddc87c846c85188d186bd965c49bcca4132961d2\")*1.0",
+						["Extra3"] = "extra2(\"ddc87c846c85188d186bd965c49bcca4132961d2\")",
+						["Extra4"] = "var1()*((0.6*(clamp((var2() - 0.15)*50, 0, 1) - clamp((var2() - 0.25)*50, 0, 1)) + 0.85*(clamp((var2() - 0.35)*50, 0, 1) - clamp((var2() - 0.42)*50, 0, 1)) + 0.1*(clamp((var2() - 0.42)*50, 0, 1) - clamp((var2() - 0.6)*50, 0, 1)))*(1 - clamp((var2() - 0.6)*50, 0, 1)) + clamp((var2() - 0.6)*50, 0, 1)*(1.15*clamp((var2() - 0.6)/0.6, 0, 1) - 0.15*clamp((var2() - 1.2)/0.8, 0, 1))) + (1 - var1())*((1 - clamp(var3()/1.2, 0, 1))*(0.65 + 0.35*sin(var3()*40)))",
+						["Extra5"] = "var1()*(clamp((var2() - 0.6)*50, 0, 1) - clamp((var2() - 1.2)*50, 0, 1))",
+						["Expression"] = "var4()",
+					},
+					["children"] = {
+					},
+				},
+			},
+		},
+	},
+},
