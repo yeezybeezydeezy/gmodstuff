@@ -2,7 +2,7 @@
 	["self"] = {
 		["ClassName"] = "group",
 		["Name"] = "501st glowing visor",
-		["UniqueID"] = "470aebd5f88834c89f81a3b4a0b253450dc054e1",
+		["UniqueID"] = "1754a46338ec0a10a0f474adc3f1fe4afd46b315",
 		["OwnerName"] = "self",
 	},
 	["children"] = {
@@ -10,14 +10,14 @@
 			["self"] = {
 				["ClassName"] = "entity2",
 				["Name"] = "trooper",
-				["UniqueID"] = "2cc237729e1953a1b4eb7056fbdadc2a5ae5b674",
+				["UniqueID"] = "b10f1131761db84b74e434a0c76c73e82339b1f7",
 			},
 			["children"] = {
 				[1] = {
 					["self"] = {
 						["ClassName"] = "material_3d",
 						["Name"] = "visor glow",
-						["UniqueID"] = "4e3d1aa71ea9bb88257a8991a54c9b3852d4fc07",
+						["UniqueID"] = "d79bb57e034a6269720154a8ef82e8c6f9a19957",
 						["MaterialOverride"] = "helmet",
 						["basetexture"] = "hazel/501st_materials_v2/enlisted/helmet",
 						["bumpmap"] = "https://raw.githubusercontent.com/yeezybeezydeezy/gmodstuff/main/pac3/501st_helmet_nm_mattevisor.vtf",
@@ -47,12 +47,12 @@
 							["self"] = {
 								["ClassName"] = "proxy",
 								["Name"] = "visor animation",
-								["UniqueID"] = "fc1c2eb3a2c5744a0d109150f4c2ad44d172b4cb",
+								["UniqueID"] = "bd2f46e0b76c24aa55d3fe29bad167c2cbb29bed",
 								["VariableName"] = "detailframe",
 								["Additive"] = true,
-								["Extra1"] = "if_event(\"58f0e1c630a7db73cefa8fb6877ca807fe6c9974\", 1, 0) * max(min(1, voice_volume()*3.5), if_event(\"c5ba3749417643f0eae60c91ce5d301e3e037950\", 1, 0) * (0.6 + 0.4*sin(time()*23)*sin(time()*9.1)))",
-								["Extra2"] = "if_event(\"88056e5d8de6e93a9e9be1babffd8a3b4f3bf306\", 1, 0)",
-								["Extra3"] = "extra5(\"ed4b0ff020d2ae3ef8dcf30d94eb18a4e961558a\")",
+								["Extra1"] = "if_event(\"e5a109553b351aefaa0e2d9c11b2e889e8c53809\", 1, 0) * max(min(1, voice_volume()*3.5), if_event(\"bfe9176908516e6fa4a3cac97613bb2ea3312f8e\", 1, 0) * (0.6 + 0.4*sin(time()*23)*sin(time()*9.1)))",
+								["Extra2"] = "if_event(\"6dfa663c8860445ca212a9e9a462115cd01e797f\", 1, 0)",
+								["Extra3"] = "extra5(\"7887b3186befe4d759397d4ff44c1b8174d4589f\")",
 								["Expression"] = "ftime()*20*(1 + 2.5*var1() + 0.8*var2() + 4*var3())",
 							},
 							["children"] = {
@@ -62,12 +62,12 @@
 							["self"] = {
 								["ClassName"] = "proxy",
 								["Name"] = "visor comms glow",
-								["UniqueID"] = "3855355c6e15ca947f14d8f97d62bd13d3061c87",
+								["UniqueID"] = "1c5305744207629a81e83117bb7253180d0135ed",
 								["VariableName"] = "detailblendfactor",
-								["Extra1"] = "if_event(\"58f0e1c630a7db73cefa8fb6877ca807fe6c9974\", 1, 0) * max(min(1, voice_volume()*3.5), if_event(\"c5ba3749417643f0eae60c91ce5d301e3e037950\", 1, 0) * (0.6 + 0.4*sin(time()*23)*sin(time()*9.1)))",
-								["Extra2"] = "if_event(\"88056e5d8de6e93a9e9be1babffd8a3b4f3bf306\", 1, 0)",
-								["Extra3"] = "extra2(\"e1b8095ec3a1cbfdb568041888ef81664334fd81\")",
-								["Extra4"] = "extra4(\"ed4b0ff020d2ae3ef8dcf30d94eb18a4e961558a\")",
+								["Extra1"] = "if_event(\"e5a109553b351aefaa0e2d9c11b2e889e8c53809\", 1, 0) * max(min(1, voice_volume()*3.5), if_event(\"bfe9176908516e6fa4a3cac97613bb2ea3312f8e\", 1, 0) * (0.6 + 0.4*sin(time()*23)*sin(time()*9.1)))",
+								["Extra2"] = "if_event(\"6dfa663c8860445ca212a9e9a462115cd01e797f\", 1, 0)",
+								["Extra3"] = "extra2(\"853b576826338b2cbc569e989ab7a5b8fc9671f6\")",
+								["Extra4"] = "extra4(\"7887b3186befe4d759397d4ff44c1b8174d4589f\")",
 								["Expression"] = "(0.85 + 0.15*sin(time()*2.4) + 0.6*var1() + 0.2*var2()*sin(time()*9))*var3()*var4()",
 							},
 							["children"] = {
@@ -77,13 +77,13 @@
 							["self"] = {
 								["ClassName"] = "proxy",
 								["Name"] = "visor rim glow",
-								["UniqueID"] = "e85b09041fa48dca854595ec8af5d24fc892b074",
+								["UniqueID"] = "d61071df09c5d380264d81a2023fe1704f936609",
 								["VariableName"] = "selfillumtint",
-								["Extra1"] = "if_event(\"58f0e1c630a7db73cefa8fb6877ca807fe6c9974\", 1, 0) * max(min(1, voice_volume()*3.5), if_event(\"c5ba3749417643f0eae60c91ce5d301e3e037950\", 1, 0) * (0.6 + 0.4*sin(time()*23)*sin(time()*9.1)))",
-								["Extra2"] = "if_event(\"88056e5d8de6e93a9e9be1babffd8a3b4f3bf306\", 1, 0)",
-								["Extra3"] = "extra3(\"e1b8095ec3a1cbfdb568041888ef81664334fd81\")",
+								["Extra1"] = "if_event(\"e5a109553b351aefaa0e2d9c11b2e889e8c53809\", 1, 0) * max(min(1, voice_volume()*3.5), if_event(\"bfe9176908516e6fa4a3cac97613bb2ea3312f8e\", 1, 0) * (0.6 + 0.4*sin(time()*23)*sin(time()*9.1)))",
+								["Extra2"] = "if_event(\"6dfa663c8860445ca212a9e9a462115cd01e797f\", 1, 0)",
+								["Extra3"] = "extra3(\"853b576826338b2cbc569e989ab7a5b8fc9671f6\")",
 								["Extra4"] = "(0.9 + 0.1*sin(time()*2.4) + 0.5*var1() + 0.15*var2()*sin(time()*9))*var3()",
-								["Extra5"] = "extra4(\"ed4b0ff020d2ae3ef8dcf30d94eb18a4e961558a\")",
+								["Extra5"] = "extra4(\"7887b3186befe4d759397d4ff44c1b8174d4589f\")",
 								["Expression"] = "0.3365*var4()*var5(), 0.6384*var4()*var5(), 0.9922*var4()*var5()",
 							},
 							["children"] = {
@@ -97,7 +97,7 @@
 			["self"] = {
 				["ClassName"] = "event",
 				["Name"] = "sensor: talking",
-				["UniqueID"] = "58f0e1c630a7db73cefa8fb6877ca807fe6c9974",
+				["UniqueID"] = "e5a109553b351aefaa0e2d9c11b2e889e8c53809",
 				["Event"] = "is_voice_chatting",
 				["Invert"] = false,
 				["AffectChildrenOnly"] = true,
@@ -109,7 +109,7 @@
 			["self"] = {
 				["ClassName"] = "event",
 				["Name"] = "sensor: typing",
-				["UniqueID"] = "88056e5d8de6e93a9e9be1babffd8a3b4f3bf306",
+				["UniqueID"] = "6dfa663c8860445ca212a9e9a462115cd01e797f",
 				["Event"] = "is_typing",
 				["Invert"] = false,
 				["AffectChildrenOnly"] = true,
@@ -121,7 +121,7 @@
 			["self"] = {
 				["ClassName"] = "event",
 				["Name"] = "sensor: my own view",
-				["UniqueID"] = "c5ba3749417643f0eae60c91ce5d301e3e037950",
+				["UniqueID"] = "bfe9176908516e6fa4a3cac97613bb2ea3312f8e",
 				["Event"] = "viewed_by_owner",
 				["Invert"] = false,
 				["AffectChildrenOnly"] = true,
@@ -133,7 +133,7 @@
 			["self"] = {
 				["ClassName"] = "sprite",
 				["Name"] = "light probe (invisible)",
-				["UniqueID"] = "276240a177aedd25f023244d80afbce2bc8d6d51",
+				["UniqueID"] = "c79e85ea6c95d775f2a96e635d30190b99c6320e",
 				["Bone"] = "head",
 				["Position"] = Vector(7.56, -9.15, 0),
 				["Size"] = 0.0,
@@ -144,11 +144,11 @@
 					["self"] = {
 						["ClassName"] = "proxy",
 						["Name"] = "light sensor",
-						["UniqueID"] = "e1b8095ec3a1cbfdb568041888ef81664334fd81",
+						["UniqueID"] = "853b576826338b2cbc569e989ab7a5b8fc9671f6",
 						["VariableName"] = "SizeY",
 						["Extra1"] = "clamp(light_value()*3, 0, 1)",
-						["Extra2"] = "(var2() or 0.7) + (0.35 + 0.65*var1() - (var2() or 0.7))*min(1, ftime()*2)",
-						["Extra3"] = "(var3() or 0.7) + (0.08 + 0.92*var1() - (var3() or 0.7))*min(1, ftime()*2)",
+						["Extra2"] = "(var2() or 0.7) + (0.35 + 1.35*var1() - (var2() or 0.7))*min(1, ftime()*2)",
+						["Extra3"] = "(var3() or 0.7) + (0.08 + 1.52*var1() - (var3() or 0.7))*min(1, ftime()*2)",
 						["Expression"] = "var2()",
 					},
 					["children"] = {
@@ -158,7 +158,7 @@
 					["self"] = {
 						["ClassName"] = "proxy",
 						["Name"] = "power state",
-						["UniqueID"] = "bbc69e6072dfe6f12bcbb89a940d7ab6b2c001cb",
+						["UniqueID"] = "8f8e0cf841f5a8695cb65b41596ec9dd89cf51e9",
 						["VariableName"] = "SizeFadePower",
 						["Extra1"] = "clamp(owner_health(), 0, 1)",
 						["Extra2"] = "((var2() or 0) + ftime())*(1 - clamp(abs(var1() + 1 - (var3() or 0)), 0, 1))",
@@ -173,11 +173,11 @@
 					["self"] = {
 						["ClassName"] = "proxy",
 						["Name"] = "power cycle",
-						["UniqueID"] = "ed4b0ff020d2ae3ef8dcf30d94eb18a4e961558a",
+						["UniqueID"] = "7887b3186befe4d759397d4ff44c1b8174d4589f",
 						["VariableName"] = "SizeX",
-						["Extra1"] = "extra1(\"bbc69e6072dfe6f12bcbb89a940d7ab6b2c001cb\")",
-						["Extra2"] = "extra4(\"bbc69e6072dfe6f12bcbb89a940d7ab6b2c001cb\")",
-						["Extra3"] = "extra2(\"bbc69e6072dfe6f12bcbb89a940d7ab6b2c001cb\")",
+						["Extra1"] = "extra1(\"8f8e0cf841f5a8695cb65b41596ec9dd89cf51e9\")",
+						["Extra2"] = "extra4(\"8f8e0cf841f5a8695cb65b41596ec9dd89cf51e9\")",
+						["Extra3"] = "extra2(\"8f8e0cf841f5a8695cb65b41596ec9dd89cf51e9\")",
 						["Extra4"] = "var1()*((0.6*(clamp((var2() - 0.15)*50, 0, 1) - clamp((var2() - 0.25)*50, 0, 1)) + 0.85*(clamp((var2() - 0.35)*50, 0, 1) - clamp((var2() - 0.42)*50, 0, 1)) + 0.1*(clamp((var2() - 0.42)*50, 0, 1) - clamp((var2() - 0.6)*50, 0, 1)))*(1 - clamp((var2() - 0.6)*50, 0, 1)) + clamp((var2() - 0.6)*50, 0, 1)*(1.15*clamp((var2() - 0.6)/0.6, 0, 1) - 0.15*clamp((var2() - 1.2)/0.8, 0, 1))) + (1 - var1())*((1 - clamp(var3()/1.2, 0, 1))*(0.65 + 0.35*sin(var3()*40)))",
 						["Extra5"] = "var1()*(clamp((var2() - 0.6)*50, 0, 1) - clamp((var2() - 1.2)*50, 0, 1))",
 						["Expression"] = "var4()",
