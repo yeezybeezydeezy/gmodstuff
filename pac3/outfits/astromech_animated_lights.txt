@@ -1,8 +1,8 @@
 [1] = {
 	["self"] = {
 		["ClassName"] = "group",
-		["Name"] = "astromech animated lights",
-		["UniqueID"] = "e58fbb14c7e67909555f72a684b08c322173efe2",
+		["Name"] = "astromech blackout lights",
+		["UniqueID"] = "0fe5b4ce25d777a7b96a1adbd811ab48edad4541",
 		["OwnerName"] = "self",
 	},
 	["children"] = {
@@ -10,16 +10,16 @@
 			["self"] = {
 				["ClassName"] = "entity2",
 				["Name"] = "droid",
-				["UniqueID"] = "6c79ea38e80b050736f634cfc824f3f3df51d4ce",
+				["UniqueID"] = "4d22bdad8caeb4a8d367a498c36f150551a31ee9",
 			},
 			["children"] = {
 				[1] = {
 					["self"] = {
 						["ClassName"] = "material_3d",
 						["Name"] = "head_r2_red lights",
-						["UniqueID"] = "6f240c0946c60d8f53f1aa3d7238c4224dc973b7",
+						["UniqueID"] = "e050310338987c85741fbe0b8ed21772084c0840",
 						["MaterialOverride"] = "head_r2_red",
-						["basetexture"] = "models/KingPommes/starwars/misc/droids/head_r2_red",
+						["basetexture"] = "https://yeezybeezydeezy.github.io/STARWARSRP/droid/head_r2_red_black.vtf",
 						["bumpmap"] = "models/KingPommes/starwars/misc/droids/head_r2_normal",
 						["model"] = true,
 						["phong"] = true,
@@ -37,7 +37,7 @@
 							["self"] = {
 								["ClassName"] = "proxy",
 								["Name"] = "light animation",
-								["UniqueID"] = "2736b247ce14a2755a5631bfb5f2ed11951fab26",
+								["UniqueID"] = "0167d706b9c81f91134ab4c59070f6d41bce7b0c",
 								["VariableName"] = "detailframe",
 								["Additive"] = true,
 								["Expression"] = "ftime()*12",
@@ -51,9 +51,9 @@
 					["self"] = {
 						["ClassName"] = "material_3d",
 						["Name"] = "torso_red lights",
-						["UniqueID"] = "8248832e71203316ca531417add1fda683c82ef6",
+						["UniqueID"] = "90bae8a471b42288eff12703c487ffc94f5dbf72",
 						["MaterialOverride"] = "torso_red",
-						["basetexture"] = "models/KingPommes/starwars/misc/droids/torso_red",
+						["basetexture"] = "https://yeezybeezydeezy.github.io/STARWARSRP/droid/torso_red_black.vtf",
 						["bumpmap"] = "models/KingPommes/starwars/misc/droids/torso_normal",
 						["model"] = true,
 						["phong"] = true,
@@ -71,7 +71,7 @@
 							["self"] = {
 								["ClassName"] = "proxy",
 								["Name"] = "light animation",
-								["UniqueID"] = "8d47a2034e0befd18ffcfcbc4ff6e529978f6d9b",
+								["UniqueID"] = "ac40ea5567bc79d3b3d58bae522544adfc9ba557",
 								["VariableName"] = "detailframe",
 								["Additive"] = true,
 								["Expression"] = "ftime()*12",
@@ -85,9 +85,9 @@
 					["self"] = {
 						["ClassName"] = "material_3d",
 						["Name"] = "legs_red lights",
-						["UniqueID"] = "e7324fe9e42626ed164f99ddba1c50c9e6673823",
+						["UniqueID"] = "addaa4db26835a8d487b67ea747eee01016cab1f",
 						["MaterialOverride"] = "legs_red",
-						["basetexture"] = "models/KingPommes/starwars/misc/droids/legs_red",
+						["basetexture"] = "https://yeezybeezydeezy.github.io/STARWARSRP/droid/legs_red_black.vtf",
 						["bumpmap"] = "models/KingPommes/starwars/misc/droids/legs_normal",
 						["model"] = true,
 						["phong"] = true,
@@ -105,7 +105,7 @@
 							["self"] = {
 								["ClassName"] = "proxy",
 								["Name"] = "light animation",
-								["UniqueID"] = "3f6d654e9de849d8a7b7b36455053676240b8d79",
+								["UniqueID"] = "1aeda7edca37ec44ef015d73da983edcacab130b",
 								["VariableName"] = "detailframe",
 								["Additive"] = true,
 								["Expression"] = "ftime()*12",
