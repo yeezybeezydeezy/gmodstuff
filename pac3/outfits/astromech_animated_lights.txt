@@ -1,0 +1,121 @@
+[1] = {
+	["self"] = {
+		["ClassName"] = "group",
+		["Name"] = "astromech animated lights",
+		["UniqueID"] = "e58fbb14c7e67909555f72a684b08c322173efe2",
+		["OwnerName"] = "self",
+	},
+	["children"] = {
+		[1] = {
+			["self"] = {
+				["ClassName"] = "entity2",
+				["Name"] = "droid",
+				["UniqueID"] = "6c79ea38e80b050736f634cfc824f3f3df51d4ce",
+			},
+			["children"] = {
+				[1] = {
+					["self"] = {
+						["ClassName"] = "material_3d",
+						["Name"] = "head_r2_red lights",
+						["UniqueID"] = "6f240c0946c60d8f53f1aa3d7238c4224dc973b7",
+						["MaterialOverride"] = "head_r2_red",
+						["basetexture"] = "models/KingPommes/starwars/misc/droids/head_r2_red",
+						["bumpmap"] = "models/KingPommes/starwars/misc/droids/head_r2_normal",
+						["model"] = true,
+						["phong"] = true,
+						["phongboost"] = 5.0,
+						["phongexponent"] = 10.0,
+						["phongfresnelranges"] = Vector(0.05, 0.5, 1.0),
+						["detail"] = "https://yeezybeezydeezy.github.io/STARWARSRP/droid/head_r2_red_lights.vtf",
+						["detailblendmode"] = 5,
+						["detailblendfactor"] = 1.0,
+						["detailscale"] = 1.0,
+						["detailframe"] = 0,
+					},
+					["children"] = {
+						[1] = {
+							["self"] = {
+								["ClassName"] = "proxy",
+								["Name"] = "light animation",
+								["UniqueID"] = "2736b247ce14a2755a5631bfb5f2ed11951fab26",
+								["VariableName"] = "detailframe",
+								["Additive"] = true,
+								["Expression"] = "ftime()*12",
+							},
+							["children"] = {
+							},
+						},
+					},
+				},
+				[2] = {
+					["self"] = {
+						["ClassName"] = "material_3d",
+						["Name"] = "torso_red lights",
+						["UniqueID"] = "8248832e71203316ca531417add1fda683c82ef6",
+						["MaterialOverride"] = "torso_red",
+						["basetexture"] = "models/KingPommes/starwars/misc/droids/torso_red",
+						["bumpmap"] = "models/KingPommes/starwars/misc/droids/torso_normal",
+						["model"] = true,
+						["phong"] = true,
+						["phongboost"] = 5.0,
+						["phongexponent"] = 10.0,
+						["phongfresnelranges"] = Vector(0.05, 0.5, 1.0),
+						["detail"] = "https://yeezybeezydeezy.github.io/STARWARSRP/droid/torso_red_lights.vtf",
+						["detailblendmode"] = 5,
+						["detailblendfactor"] = 1.0,
+						["detailscale"] = 1.0,
+						["detailframe"] = 0,
+					},
+					["children"] = {
+						[1] = {
+							["self"] = {
+								["ClassName"] = "proxy",
+								["Name"] = "light animation",
+								["UniqueID"] = "8d47a2034e0befd18ffcfcbc4ff6e529978f6d9b",
+								["VariableName"] = "detailframe",
+								["Additive"] = true,
+								["Expression"] = "ftime()*12",
+							},
+							["children"] = {
+							},
+						},
+					},
+				},
+				[3] = {
+					["self"] = {
+						["ClassName"] = "material_3d",
+						["Name"] = "legs_red lights",
+						["UniqueID"] = "e7324fe9e42626ed164f99ddba1c50c9e6673823",
+						["MaterialOverride"] = "legs_red",
+						["basetexture"] = "models/KingPommes/starwars/misc/droids/legs_red",
+						["bumpmap"] = "models/KingPommes/starwars/misc/droids/legs_normal",
+						["model"] = true,
+						["phong"] = true,
+						["phongboost"] = 5.0,
+						["phongexponent"] = 10.0,
+						["phongfresnelranges"] = Vector(0.05, 0.5, 1.0),
+						["detail"] = "https://yeezybeezydeezy.github.io/STARWARSRP/droid/legs_red_lights.vtf",
+						["detailblendmode"] = 5,
+						["detailblendfactor"] = 1.0,
+						["detailscale"] = 1.0,
+						["detailframe"] = 0,
+					},
+					["children"] = {
+						[1] = {
+							["self"] = {
+								["ClassName"] = "proxy",
+								["Name"] = "light animation",
+								["UniqueID"] = "3f6d654e9de849d8a7b7b36455053676240b8d79",
+								["VariableName"] = "detailframe",
+								["Additive"] = true,
+								["Expression"] = "ftime()*12",
+							},
+							["children"] = {
+							},
+						},
+					},
+				},
+			},
+		},
+	},
+},
