@@ -1,0 +1,111 @@
+[1] = {
+	["self"] = {
+		["ClassName"] = "group",
+		["Name"] = "501st glowing visor",
+		["UniqueID"] = "e4bfc9645fddadad6ddf23461459cbbf8c473148",
+		["OwnerName"] = "self",
+	},
+	["children"] = {
+		[1] = {
+			["self"] = {
+				["ClassName"] = "entity2",
+				["Name"] = "trooper",
+				["UniqueID"] = "0339779bffcf92d2a7b3058fdf144605a11838e4",
+			},
+			["children"] = {
+				[1] = {
+					["self"] = {
+						["ClassName"] = "material_3d",
+						["Name"] = "visor glow",
+						["UniqueID"] = "cd9de550e6282f792c1ad42b2290bffd48936541",
+						["MaterialOverride"] = "helmet",
+						["basetexture"] = "hazel/501st_materials_v2/enlisted/helmet",
+						["bumpmap"] = "wgcwrp/shared/helmet_nm",
+						["color2"] = Vector(0.9, 0.9, 0.9),
+						["halflambert"] = true,
+						["model"] = true,
+						["nocull"] = true,
+						["phong"] = true,
+						["phongboost"] = 1.7,
+						["phongexponent"] = 15.0,
+						["phongexponenttexture"] = "wgcwrp/shared/plain_exp",
+						["phongfresnelranges"] = Vector(0.5, 0.5, 0),
+						["phongalbedotint"] = true,
+						["detail"] = "https://raw.githubusercontent.com/yeezybeezydeezy/gmodstuff/main/pac3/501st_visor_anim_v2.vtf",
+						["detailblendmode"] = 5,
+						["detailblendfactor"] = 1.0,
+						["detailscale"] = 1.0,
+						["detailframe"] = 0,
+						["detailtexturetransformScale"] = Vector(3.30033, 9.00901, 1),
+						["detailtexturetransformPosition"] = Vector(-1.12211, -7.6036, 0),
+					},
+					["children"] = {
+						[1] = {
+							["self"] = {
+								["ClassName"] = "proxy",
+								["Name"] = "visor animation",
+								["UniqueID"] = "bfc3a2b7f90d49245eebab0d8e1f099ac86fe65a",
+								["VariableName"] = "detailframe",
+								["Additive"] = true,
+								["Extra1"] = "if_event(\"900d49bb1e25f9cf91a8dc50d7418f2bc03a7cff\", 1, 0) * max(min(1, voice_volume()*3.5), if_event(\"e52b2016b65267d6eb397ba921d8cdb0823bc531\", 1, 0) * (0.6 + 0.4*sin(time()*23)*sin(time()*9.1)))",
+								["Extra2"] = "if_event(\"0f48504ec2b047a6a8701aac46ffb84c107393a2\", 1, 0)",
+								["Expression"] = "ftime()*20*(1 + 2.5*var1() + 0.8*var2())",
+							},
+							["children"] = {
+							},
+						},
+						[2] = {
+							["self"] = {
+								["ClassName"] = "proxy",
+								["Name"] = "visor comms glow",
+								["UniqueID"] = "ebeb95b80e8312a88fbcdfc1d5d3d4e12ee86adb",
+								["VariableName"] = "detailblendfactor",
+								["Extra1"] = "if_event(\"900d49bb1e25f9cf91a8dc50d7418f2bc03a7cff\", 1, 0) * max(min(1, voice_volume()*3.5), if_event(\"e52b2016b65267d6eb397ba921d8cdb0823bc531\", 1, 0) * (0.6 + 0.4*sin(time()*23)*sin(time()*9.1)))",
+								["Extra2"] = "if_event(\"0f48504ec2b047a6a8701aac46ffb84c107393a2\", 1, 0)",
+								["Expression"] = "0.85 + 0.15*sin(time()*2.4) + 1.1*var1() + 0.35*var2()*sin(time()*9)",
+							},
+							["children"] = {
+							},
+						},
+					},
+				},
+			},
+		},
+		[2] = {
+			["self"] = {
+				["ClassName"] = "event",
+				["Name"] = "sensor: talking",
+				["UniqueID"] = "900d49bb1e25f9cf91a8dc50d7418f2bc03a7cff",
+				["Event"] = "is_voice_chatting",
+				["Invert"] = false,
+				["AffectChildrenOnly"] = true,
+			},
+			["children"] = {
+			},
+		},
+		[3] = {
+			["self"] = {
+				["ClassName"] = "event",
+				["Name"] = "sensor: typing",
+				["UniqueID"] = "0f48504ec2b047a6a8701aac46ffb84c107393a2",
+				["Event"] = "is_typing",
+				["Invert"] = false,
+				["AffectChildrenOnly"] = true,
+			},
+			["children"] = {
+			},
+		},
+		[4] = {
+			["self"] = {
+				["ClassName"] = "event",
+				["Name"] = "sensor: my own view",
+				["UniqueID"] = "e52b2016b65267d6eb397ba921d8cdb0823bc531",
+				["Event"] = "viewed_by_owner",
+				["Invert"] = false,
+				["AffectChildrenOnly"] = true,
+			},
+			["children"] = {
+			},
+		},
+	},
+},
